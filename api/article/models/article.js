@@ -11,10 +11,17 @@ module.exports = {
       if (data.title) {
         data.slug = slugify(data.title);
       }
+
+      if (data.text) {
+        data.summary = data.text.slice(0, 70);
+      }
     },
     beforeUpdate: async (params, data) => {
       if (data.title) {
         data.slug = slugify(data.title);
+      }
+      if (data.text) {
+        data.summary = data.text.slice(0, 70);
       }
     },
   },
