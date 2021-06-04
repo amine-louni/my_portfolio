@@ -25,6 +25,24 @@
     },
     "summary": {
       "type": "string"
+    },
+    "logo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tags": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }
